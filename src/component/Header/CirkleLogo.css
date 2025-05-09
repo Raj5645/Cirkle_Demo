@@ -1,0 +1,33 @@
+.cirkleLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* Center horizontally */
+    justify-content: center;    /* Center vertically if needed */
+    width: 100%;                /* Take full width of parent (e.g., tagline container) */
+    max-width: 180px;           /* Prevents logo from stretching navbar, adjust as needed */
+    margin: 0 auto;             /* Center in parent */
+  }
+  
+  .cirkleLogo-title {
+    font-family: 'Ruda', Arial, sans-serif;
+    font-size: 1.2rem;          /* Smaller, adjustable */
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-align: center;
+  }
+  
+  .cirkleLogo-subtitle {
+    font-family: 'Ruda', Arial, sans-serif;
+    font-size: 0.75rem;         /* Smaller, adjustable */
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    opacity: 0.85;
+    text-align: center;
+  }
+  

@@ -1,11 +1,19 @@
-.layout {
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@500&display=swap');
+
+
+  .layout {
     min-height: 100vh;
     background: #181818;
-    margin: 0;
-    padding: 0;
+    width: 100%; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden; 
   }
+
+ 
   
-  .navbar {
+  /* .navbar {
     width: 100vw;
     background: #181818;
     display: flex;
@@ -13,8 +21,26 @@
     justify-content: space-between;
     border-bottom: 2px solid #fff;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-  }
+  } */
+
+  .navbar {
+    width: 100vw;
+    background: #181818;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 74px; 
+  } 
+
+
+ 
+
   
   .logo-container {
     display: flex;
@@ -24,12 +50,22 @@
     min-width: 180px;
   }
   
-  .nav-list {
+  /* .nav-list {
     display: flex;
     gap: 18px;
     list-style: none;
     margin: 0;
     padding: 12px 40px 0 0;
+  } */
+
+  .nav-list {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0 40px 0 0; /* <-- Right padding (was 12px 40px 0 0) */
+    height: 100%;        /* Make nav-list fill navbar height */
+    align-items: center; /* Vertically center items */
   }
   
   .nav-list li {
@@ -39,11 +75,11 @@
   }
   
   /* Plain text links (no background, no box) */
-  .nav-list li:not(:last-child) a {
+   .nav-list li:not(:last-child) a {
     color: #ccc;
     text-decoration: none;
     font-size: 1.25rem;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Ruda', Arial, sans-serif;
     font-weight: 500;
     padding: 12px 32px;
     border-radius: 0;
@@ -52,9 +88,19 @@
     position: relative;
     overflow: hidden;
   }
+
+  /* .nav-list li:not(:last-child) a {
+    font-family: 'Ruda', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: #fff;                /* Text color */
+    /* background: #949494;        /* Background color as per Figma */
+  /* }  */
   
   /* Underline on hover/focus for plain links */
-  .nav-list li:not(:last-child) a::after {
+   .nav-list li:not(:last-child) a::after {
     content: '';
     display: block;
     position: absolute;
@@ -79,9 +125,24 @@
   .nav-list li:not(:last-child) a:hover,
   .nav-list li:not(:last-child) a:focus {
     color: #fff;
-  }
-  
+  } 
+   
   /* "Contact Us" button */
+  /* .nav-list li:last-child a {
+    background: linear-gradient(90deg, #1ec9fc 0%, #19e6c1 100%);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(30,201,252,0.18);
+    padding: 12px 32px;
+    font-size: 1.25rem;
+    font-family: 'Ruda', Arial, sans-serif;
+    text-decoration: none;
+    transition: filter 0.2s;
+    position: relative;
+    z-index: 1;
+  }  */
+
   .nav-list li:last-child a {
     background: linear-gradient(90deg, #1ec9fc 0%, #19e6c1 100%);
     color: #fff;
@@ -90,15 +151,20 @@
     box-shadow: 0 2px 12px rgba(30,201,252,0.18);
     padding: 12px 32px;
     font-size: 1.25rem;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Ruda', Arial, sans-serif;
     text-decoration: none;
     transition: filter 0.2s;
     position: relative;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px; /* Vertically matches navbar */
+    margin-right: 24px; /* <-- Add space from right edge */
   }
   
   /* Button hover effect */
-  .nav-list li:last-child a:hover,
+   .nav-list li:last-child a:hover,
   .nav-list li:last-child a:focus {
     filter: brightness(1.08);
   }
@@ -116,5 +182,10 @@
       gap: 10px;
       padding: 0 20px 12px 20px;
     }
-  }
-  
+  } 
+
+
+
+
+
+    

@@ -1,10 +1,11 @@
 import React from 'react'
-import Logo from '../../assets/logo.png'
+import "./CirkleLogo.css"
 
 function CirkleLogo() {
   return (
-    <div>
-       <img src={Logo} alt="CirkleLogo"/>
+    <div className="cirkleLogo">
+        <p className="cirkleLogo-title">Cirkle</p>
+        <p className="cirkleLogo-subtitle">An ecosystem for events</p>
     </div>
   )
 }

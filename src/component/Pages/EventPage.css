@@ -1,0 +1,82 @@
+/* Import Ruda font */
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700&display=swap');
+
+/* Main container for the sidebar */
+.leftSide-content {
+  width: 165.96px;
+  height: auto;
+  min-height: 477.11px;
+  top: 109px;
+  left: 21px;
+  border-radius: 12px;
+  padding: 13px 10px 13px 13px;
+  gap: 10px;
+  background-color: #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Base style for all sidebar buttons */
+.leftSide-content button {
+  width: 142.96px;
+  height: 31px;
+  border-radius: 6px;
+  padding: 5px 8px;
+  gap: 1px;
+  background-color: transparent;
+  border: none;
+  color: #949494;
+  font-family: 'Ruda', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Active/selected button style */
+.leftSide-content button.active {
+  background: linear-gradient(92.72deg, #3479FF -20.69%, #22E6CE 109.27%);
+  color: white;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* Hover effect for buttons */
+.leftSide-content button:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Style for the icon inside buttons */
+.leftSide-content button img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Title button (Live and Loud) */
+.leftSide-content button:first-child {
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Add back arrow to the title */
+.leftSide-content button:first-child::after {
+  content: "←";
+  font-size: 18px;
+}
+
+/* Layout for the main content area */
+.rightSide-content {
+  margin-left: 195.96px; /* leftSide width + left position + some spacing */
+  padding: 20px;
+}

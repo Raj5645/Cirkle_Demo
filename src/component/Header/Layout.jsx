@@ -1,6 +1,7 @@
 import {Outlet,Link} from "react-router-dom";
 import "./Layout.css";
 import CirkleLogo from "./CirkleLogo";
+import BackgroundContainer from "../BackgroundContainer";
 
 
 function Layout() {
@@ -33,7 +34,9 @@ function Layout() {
             </ul>
         </nav>
 
-        
+        {/* <div>
+            <BackgroundContainer/>
+        </div> */}
 
         <Outlet/>
     </div>)
