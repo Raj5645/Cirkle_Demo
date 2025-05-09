@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@500;700&display=swap');
+
+/* .submitBody {
+  background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(30,201,252,0.10);
+  padding: 32px 28px 28px 28px;
+  max-width: 420px;         /* Slightly increased width */
+  /* margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */ 
+
+.submitBody {
+    position: relative;
+    border-radius: 18px;
+    padding: 32px 28px 28px 28px;
+    max-width: 420px;
+    margin: 40px auto;
+    background:
+      linear-gradient(#181818, #181818) padding-box, /* Inner background */
+      linear-gradient(120deg, #3b82f6, #06b6d4, transparent 90%) border-box; /* Border gradient */
+    border: 3px solid transparent; /* Required for border-box gradient */
+    box-shadow: 0 4px 24px rgba(30,201,252,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+.submitBody-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;                /* Less vertical space between inputs */
+}
+
+.submitBody-info input {
+  font-family: 'Ruda', Arial, sans-serif;
+  font-size: 1.1rem;
+  padding: 10px 16px;
+  border: 2px solid #2dd4fc;        /* Brighter border */
+  border-radius: 10px;
+  background: #23272f;
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.2s, background 0.2s, border-color 0.2s;
+  box-shadow: 0 1px 6px rgba(30,201,252,0.10);
+  width: 100%;                      /* Full width of container */
+  margin-bottom: 0;                 /* No extra margin */
+}
+
+.submitBody-info input:focus {
+  background: #232f3e;
+  border-color: #3b82f6;            /* Even brighter on focus */
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.submitBody-button {
+  margin-top: 18px;                 /* Less space above button */
+  display: flex;
+  justify-content: center;
+}
+
+.submitBody-button button {
+  background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+  color: #fff;
+  font-family: 'Ruda', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 32px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(30,201,252,0.15);
+  transition: filter 0.18s, box-shadow 0.18s, transform 0.18s;
+}
+
+.submitBody-button button:hover,
+.submitBody-button button:focus {
+  filter: brightness(1.08);
+  box-shadow: 0 4px 24px rgba(30,201,252,0.22);
+  transform: scale(1.04);
+}

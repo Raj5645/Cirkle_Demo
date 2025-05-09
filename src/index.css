@@ -33,6 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  margin-top: 0 !important;
 }
 
 h1 {
@@ -70,4 +71,22 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
